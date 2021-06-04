@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Quintella-Notebook\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Quintella-Notebook\\.nuget\\packages"
+    ]
+  }
+}
