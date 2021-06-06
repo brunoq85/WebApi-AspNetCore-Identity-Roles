@@ -19,7 +19,7 @@ namespace Dev.Api.Controllers
         private readonly UserManager<IdentityUser> _userManager;
                  
         private readonly AppSettings _appSettings;
-
+                                                                                                                                           
         public AuthController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IOptions<AppSettings> appSettings)
         {
             _signInManager = signInManager;

@@ -12,17 +12,15 @@ namespace Dev.Api.Controllers
     [ApiController]
     public class RolesController : ControllerBase
     {
-        private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public RolesController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
+        public RolesController(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
-            _userManager = userManager;
         }
 
         [HttpGet("listar-todos")]
-        public async Task<ActionResult> GetAllRoles()
+        public ActionResult GetAllRoles()
         {
             var roles = _roleManager.Roles;
 
@@ -108,27 +106,6 @@ namespace Dev.Api.Controllers
             }
 
             return BadRequest(role);
-        }
-
-        [HttpPost("associar-usuario-funcao")]
-        public async Task<ActionResult> ConnectUserRoleAsync(UserRolesViewModel model)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-
-            var user = await _userManager.FindByIdAsync(model.UserId);
-            var role = await _roleManager.FindByIdAsync(model.RoleId);
-
-            var result = await _userManager.AddToRoleAsync(user, role.Name);
-
-            if (result.Succeeded)
-                return Ok($"O usuário {user.Email} foi associado à funçao {role.Name}");
-
-            foreach (var erro in result.Errors)
-            {
-                return BadRequest(erro.Description);
-            }
-
-            return BadRequest(model);
         }
     }
 }

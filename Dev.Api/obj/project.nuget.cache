@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AdQDBXRROfamreRbRq6i/3WQzS16dq2+uL/7dPjUYPu3FXK5U/l0bxaTX/F4FbOEsWprlhts+BRRYY8P3CnaPQ==",
+  "dgSpecHash": "0e2y2Rdqq0hS643RZlqBCovWUfMLSfxrAkBKSIJ8jpZBeEqySQvwzY6jc1hNQVXuDbEuixx22UB9Vq0ThKqelg==",
   "success": true,
   "projectFilePath": "C:\\MS\\VS\\MinhaApiComJWT\\Dev.Api\\Dev.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Quintella-Notebook\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Quintella-Notebook\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Quintella-Notebook\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.6\\microsoft.aspnetcore.authentication.jwtbearer.5.0.6.nupkg.sha512",
     "C:\\Users\\Quintella-Notebook\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.6\\microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
